@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Laika</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20250130173418" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo"
+            ><img src="img/logo.png" alt="Logo Laika"
+          /></a>
+          <div class="header__right">
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-goto-top="120"
+                      class="menu__link"
+                      >About</a
+                    >
+                  </li>
+                  <li class="menu__item menu__item--decor"></li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".how"
+                      data-goto-top="140"
+                      class="menu__link"
+                      >HOW To BUY</a
+                    >
+                  </li>
+                  <li class="menu__item menu__item--decor"></li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".tokenomics"
+                      data-goto-top="60"
+                      class="menu__link"
+                      >Laikanomics</a
+                    >
+                  </li>
+                  <li class="menu__item menu__item--decor"></li>
+                  <li class="menu__item">
+                    <a href="#" target="_blank" class="menu__link"
+                      >White Paper</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <a
+              href="#"
+              target="_blank"
+              class="header__buy"
+              data-da=".menu__body, 767.98"
+            >
+              <span>Buy Now</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <img src="img/hero/bg.png" alt="BG" />
+          </div>
+          <div class="hero__stars"></div>
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">Laika the Space Dog</h1>
+              <div class="hero__text">Earth’s First Space Traveler</div>
+              <div class="hero__actions">
+                <a href="#" target="_blank" class="hero__buy">
+                  <span>Buy Now</span>
+                </a>
+                <div class="hero__social">
+                  <a href="#" target="_blank" class="hero__social-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="23"
+                      viewBox="0 0 25 23"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.4 0.624573H23.0806L15.0406 9.83714L24.5 22.3754H17.0943L11.2897 14.7726L4.65543 22.3754H0.971429L9.57029 12.5183L0.5 0.626287H8.09429L13.3331 7.57429L19.4 0.624573ZM18.1057 20.1674H20.1457L6.98 2.71772H4.79257L18.1057 20.1674Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" target="_blank" class="hero__social-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.2767 4.92997C20.5238 4.82596 20.7943 4.79008 21.0599 4.82608C21.3256 4.86208 21.5768 4.96863 21.7873 5.13465C21.9979 5.30067 22.1601 5.52008 22.257 5.77005C22.354 6.02002 22.3822 6.29141 22.3387 6.55597L20.0707 20.313C19.8507 21.64 18.3947 22.401 17.1777 21.74C16.1597 21.187 14.6477 20.335 13.2877 19.446C12.6077 19.001 10.5247 17.576 10.7807 16.562C11.0007 15.695 14.5007 12.437 16.5007 10.5C17.2857 9.73897 16.9277 9.29997 16.0007 9.99997C13.6987 11.738 10.0027 14.381 8.78065 15.125C7.70265 15.781 7.14065 15.893 6.46865 15.781C5.24265 15.577 4.10565 15.261 3.17765 14.876C1.92365 14.356 1.98465 12.632 3.17665 12.13L20.2767 4.92997Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" target="_blank" class="hero__social-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 23 23"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.67 7.57045e-09L16.33 1.85345e-08C20.01 2.27113e-08 23 2.99 23 6.67L23 16.33C23 18.099 22.2973 19.7955 21.0464 21.0464C19.7955 22.2973 18.099 23 16.33 23L6.67 23C2.99 23 -2.27113e-08 20.01 -1.85345e-08 16.33L-7.57045e-09 6.67C-5.56264e-09 4.90101 0.70273 3.20447 1.9536 1.9536C3.20447 0.70273 4.90101 5.56264e-09 6.67 7.57045e-09ZM6.44 2.3C5.342 2.3 4.28898 2.73618 3.51258 3.51258C2.73618 4.28898 2.3 5.342 2.3 6.44L2.3 16.56C2.3 18.8485 4.1515 20.7 6.44 20.7L16.56 20.7C17.658 20.7 18.711 20.2638 19.4874 19.4874C20.2638 18.711 20.7 17.658 20.7 16.56L20.7 6.44C20.7 4.1515 18.8485 2.3 16.56 2.3L6.44 2.3ZM17.5375 4.025C17.9187 4.025 18.2844 4.17645 18.554 4.44603C18.8236 4.71562 18.975 5.08125 18.975 5.4625C18.975 5.84375 18.8236 6.20938 18.554 6.47897C18.2844 6.74855 17.9187 6.9 17.5375 6.9C17.1563 6.9 16.7906 6.74855 16.521 6.47897C16.2514 6.20938 16.1 5.84375 16.1 5.4625C16.1 5.08125 16.2514 4.71562 16.521 4.44603C16.7906 4.17645 17.1563 4.025 17.5375 4.025ZM11.5 5.75C13.025 5.75 14.4875 6.3558 15.5659 7.43414C16.6442 8.51247 17.25 9.97501 17.25 11.5C17.25 13.025 16.6442 14.4875 15.5659 15.5659C14.4875 16.6442 13.025 17.25 11.5 17.25C9.97501 17.25 8.51247 16.6442 7.43414 15.5659C6.3558 14.4875 5.75 13.025 5.75 11.5C5.75 9.97501 6.3558 8.51247 7.43414 7.43414C8.51247 6.3558 9.97501 5.75 11.5 5.75ZM11.5 8.05C10.585 8.05 9.70748 8.41348 9.06048 9.06048C8.41348 9.70748 8.05 10.585 8.05 11.5C8.05 12.415 8.41348 13.2925 9.06048 13.9395C9.70748 14.5865 10.585 14.95 11.5 14.95C12.415 14.95 13.2925 14.5865 13.9395 13.9395C14.5865 13.2925 14.95 12.415 14.95 11.5C14.95 10.585 14.5865 9.70748 13.9395 9.06048C13.2925 8.41348 12.415 8.05 11.5 8.05Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" target="_blank" class="hero__social-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="31"
+                      height="31"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.5 25.5C4.8125 25.5 4.22417 25.2554 3.735 24.7663C3.24583 24.2771 3.00083 23.6883 3 23V8C3 7.3125 3.245 6.72417 3.735 6.235C4.225 5.74583 4.81333 5.50083 5.5 5.5H25.5C26.1875 5.5 26.7763 5.745 27.2663 6.235C27.7563 6.725 28.0008 7.31333 28 8V23C28 23.6875 27.7554 24.2763 27.2663 24.7663C26.7771 25.2563 26.1883 25.5008 25.5 25.5H5.5ZM25.5 10.5L16.1562 16.3438C16.0521 16.4063 15.9429 16.4533 15.8287 16.485C15.7146 16.5167 15.605 16.5321 15.5 16.5312C15.395 16.5304 15.2858 16.515 15.1725 16.485C15.0592 16.455 14.9496 16.4079 14.8438 16.3438L5.5 10.5V23H25.5V10.5ZM15.5 14.25L25.5 8H5.5L15.5 14.25ZM5.5 10.8125V8.96875V9V8.985V10.8125Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img src="img/hero/01.png" alt="Laika" />
+            </div>
+          </div>
+        </section>
+        <div class="page__about-how about-how">
+          <div class="about-how__bg">
+            <img src="img/about/bg.png" alt="BG" />
+            <img src="img/about/bottom.png" alt="BG" />
+            <span id="rocket"></span>
+          </div>
+          <section class="about-how__about about" data-watch="navigator">
+            <div class="about__container">
+              <div
+                class="about__content"
+                data-watch-threshold="0.75"
+                data-watch-once
+                data-watch
+              >
+                <h2 class="about__title">About</h2>
+                <div class="about__text">
+                  Laika was the first living creature to be launched into space
+                  and orbit the earth. This project pays homage to her and the
+                  significance of this amazing feat kicking off humankind’s
+                  journey to become a multi-planetary species. We’re confident
+                  that dogs, like Laika, will join us on the journey.
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="about-how__info pl-func pr-func">
+            <h3>Laika the Space Dog coin honors this brave dog</h3>
+            <p>
+              and the efforts all living things have made for space exploration.
+            </p>
+          </div>
+          <section class="about-how__how how" data-watch="navigator">
+            <div class="how__container">
+              <div class="how__image">
+                <img src="img/about/01.png" alt="Laika" />
+              </div>
+              <div class="how__content">
+                <h2
+                  class="how__title"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  How <br />
+                  to Buy
+                </h2>
+                <div class="how__steps">
+                  <div
+                    class="how__step"
+                    data-watch-threshold="0.85"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="how__step-num">1.</div>
+                    <div class="how__step-text">
+                      Download and set up Phantom Wallet on your mobile device
+                      or browser.
+                    </div>
+                  </div>
+                  <div
+                    class="how__step"
+                    data-watch-threshold="0.85"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="how__step-num">2.</div>
+                    <div class="how__step-text">
+                      Purchase <span>$</span>SOL from a crypto exchange like
+                      Binance or Coinbase, or bridge it to the Solana network.
+                    </div>
+                  </div>
+                  <div
+                    class="how__step"
+                    data-watch-threshold="0.85"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="how__step-num">3.</div>
+                    <div class="how__step-text">
+                      Send the <span>$</span>SOL you purchased (or bridged) to
+                      your Phantom Wallet address.
+                    </div>
+                  </div>
+                  <div
+                    class="how__step"
+                    data-watch-threshold="0.85"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="how__step-num">4.</div>
+                    <div class="how__step-text">
+                      Visit Jupiter or Raydium, connect your wallet, and swap
+                      your <span>$</span>SOL for <span>$</span>LAIKA.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="page__roadmap roadmap">
+          <div class="roadmap__bg">
+            <img src="img/roadmap/bg.png" alt="BG" />
+          </div>
+          <div class="roadmap__container">
+            <div class="roadmap__image">
+              <img src="img/roadmap/01.png" alt="Planet" />
+            </div>
+            <div class="roadmap__content">
+              <h2 class="roadmap__title" data-watch-threshold="0.95" data-watch>
+                <img src="img/roadmap/title.png" alt="Roadmap" />
+                <img src="img/roadmap/rocket.png" alt="Rocket" />
+              </h2>
+              <div class="roadmap__list">
+                <div
+                  class="roadmap__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <h3>1. Creation</h3>
+                  <p>
+                    The initial phase will be creating the Laika meme token and
+                    accompanying media, including the website, X, Instagram, and
+                    Telegram channels.
+                  </p>
+                </div>
+                <div
+                  class="roadmap__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <h3>2. Marketing</h3>
+                  <p>
+                    The second phase will immediately follow the creation phase,
+                    where we plan to market the meme token across all channels.
+                    We also plan to list the token on multiple exchanges.
+                  </p>
+                </div>
+                <div
+                  class="roadmap__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <h3>3. Expansion</h3>
+                  <p>
+                    The expansion phase will follow but complement the marketing
+                    phase. We plan to celebrate Laika the Space Dog by posting
+                    artwork related to the Sputnik 2 mission and early Soviet
+                    space art.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__tokenomics-join tokenomics-join">
+          <div class="tokenomics-join__bg">
+            <img src="img/tokenomics/bg.png" alt="Image" />
+          </div>
+          <section
+            class="tokenomics-join__tokenomics tokenomics"
+            data-watch="navigator"
+          >
+            <div class="tokenomics__title">
+              <img src="img/tokenomics/Title.png" alt="LaikaNomics" />
+              <img src="img/tokenomics/Title-mob.png" alt="LaikaNomics" />
+            </div>
+            <div class="tokenomics__container">
+              <div class="tokenomics__items">
+                <div
+                  class="tokenomics__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <span>Symbol:</span>
+                  <span><span>$</span>LAika</span>
+                </div>
+                <div
+                  class="tokenomics__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <span>TAX:</span>
+                  <span>0/0</span>
+                </div>
+                <div
+                  class="tokenomics__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <span>Destribution:</span>
+                  <span>100<span>%</span></span>
+                </div>
+                <div
+                  class="tokenomics__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <span>Liquidity Pool:</span>
+                  <span>Burned Forever</span>
+                </div>
+                <div
+                  class="tokenomics__item"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <span>Address:</span>
+                  <span>[TO BE COMPLETED]</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="tokenomics-join__join join" data-watch="navigator">
+            <div class="join__container">
+              <div class="join__image">
+                <img src="img/tokenomics/01.png" alt="Laika" />
+              </div>
+              <div class="join__content">
+                <h2
+                  class="join__title"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  Join us
+                </h2>
+                <h4
+                  class="join__sub-title"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  Be Part of History
+                </h4>
+                <div
+                  class="join__actions"
+                  data-watch-threshold="0.85"
+                  data-watch-once
+                  data-watch
+                >
+                  <a href="#" target="_blank" class="join__buy">
+                    <span>Buy Now</span>
+                  </a>
+                  <div class="join__social">
+                    <a href="#" target="_blank" class="join__social-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="23"
+                        viewBox="0 0 25 23"
+                        fill="none"
+                      >
+                        <path
+                          d="M19.4 0.624573H23.0806L15.0406 9.83714L24.5 22.3754H17.0943L11.2897 14.7726L4.65543 22.3754H0.971429L9.57029 12.5183L0.5 0.626287H8.09429L13.3331 7.57429L19.4 0.624573ZM18.1057 20.1674H20.1457L6.98 2.71772H4.79257L18.1057 20.1674Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" target="_blank" class="join__social-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="19"
+                        viewBox="0 0 21 19"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M18.4681 1.03247C18.7152 0.928465 18.9857 0.892593 19.2513 0.928591C19.517 0.964589 19.7682 1.07114 19.9787 1.23716C20.1893 1.40318 20.3515 1.62259 20.4484 1.87256C20.5454 2.12253 20.5736 2.39391 20.5301 2.65847L18.2621 16.4155C18.0421 17.7425 16.5861 18.5035 15.3691 17.8425C14.3511 17.2895 12.8391 16.4375 11.4791 15.5485C10.7991 15.1035 8.71606 13.6785 8.97206 12.6645C9.19206 11.7975 12.6921 8.53947 14.6921 6.60247C15.4771 5.84147 15.1191 5.40247 14.1921 6.10247C11.8901 7.84047 8.19406 10.4835 6.97206 11.2275C5.89406 11.8835 5.33206 11.9955 4.66006 11.8835C3.43406 11.6795 2.29706 11.3635 1.36906 10.9785C0.11506 10.4585 0.17606 8.73447 1.36806 8.23247L18.4681 1.03247Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" target="_blank" class="join__social-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.58992 0.441406L17.2499 0.441406C20.9299 0.441406 23.9199 3.43141 23.9199 7.11141L23.9199 16.7714C23.9199 18.5404 23.2172 20.2369 21.9663 21.4878C20.7155 22.7387 19.0189 23.4414 17.2499 23.4414L7.58992 23.4414C3.90992 23.4414 0.919922 20.4514 0.919922 16.7714L0.919922 7.11141C0.919922 5.34241 1.62265 3.64587 2.87352 2.395C4.12439 1.14414 5.82093 0.441406 7.58992 0.441406ZM7.35992 2.74141C6.26193 2.74141 5.2089 3.17758 4.4325 3.95398C3.6561 4.73039 3.21992 5.78341 3.21992 6.88141L3.21992 17.0014C3.21992 19.2899 5.07142 21.1414 7.35992 21.1414L17.4799 21.1414C18.5779 21.1414 19.6309 20.7052 20.4073 19.9288C21.1837 19.1524 21.6199 18.0994 21.6199 17.0014L21.6199 6.88141C21.6199 4.59291 19.7684 2.74141 17.4799 2.74141L7.35992 2.74141ZM18.4574 4.46641C18.8387 4.46641 19.2043 4.61786 19.4739 4.88744C19.7435 5.15702 19.8949 5.52266 19.8949 5.90391C19.8949 6.28516 19.7435 6.65079 19.4739 6.92037C19.2043 7.18996 18.8387 7.34141 18.4574 7.34141C18.0762 7.34141 17.7105 7.18996 17.441 6.92037C17.1714 6.65079 17.0199 6.28516 17.0199 5.90391C17.0199 5.52266 17.1714 5.15702 17.441 4.88744C17.7105 4.61786 18.0762 4.46641 18.4574 4.46641ZM12.4199 6.19141C13.9449 6.19141 15.4075 6.79721 16.4858 7.87554C17.5641 8.95388 18.1699 10.4164 18.1699 11.9414C18.1699 13.4664 17.5641 14.9289 16.4858 16.0073C15.4075 17.0856 13.9449 17.6914 12.4199 17.6914C10.8949 17.6914 9.43239 17.0856 8.35406 16.0073C7.27572 14.9289 6.66992 13.4664 6.66992 11.9414C6.66992 10.4164 7.27572 8.95388 8.35406 7.87554C9.43239 6.79721 10.8949 6.19141 12.4199 6.19141ZM12.4199 8.49141C11.5049 8.49141 10.6274 8.85489 9.9804 9.50189C9.3334 10.1489 8.96992 11.0264 8.96992 11.9414C8.96992 12.8564 9.3334 13.7339 9.9804 14.3809C10.6274 15.0279 11.5049 15.3914 12.4199 15.3914C13.3349 15.3914 14.2124 15.0279 14.8594 14.3809C15.5064 13.7339 15.8699 12.8564 15.8699 11.9414C15.8699 11.0264 15.5064 10.1489 14.8594 9.50189C14.2124 8.85489 13.3349 8.49141 12.4199 8.49141Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" target="_blank" class="join__social-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="31"
+                        height="31"
+                        viewBox="0 0 31 31"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.41992 25.9414C4.73242 25.9414 4.14409 25.6968 3.65492 25.2077C3.16576 24.7185 2.92076 24.1297 2.91992 23.4414V8.44141C2.91992 7.75391 3.16492 7.16557 3.65492 6.67641C4.14492 6.18724 4.73326 5.94224 5.41992 5.94141H25.4199C26.1074 5.94141 26.6962 6.18641 27.1862 6.67641C27.6762 7.16641 27.9208 7.75474 27.9199 8.44141V23.4414C27.9199 24.1289 27.6753 24.7177 27.1862 25.2077C26.697 25.6977 26.1083 25.9422 25.4199 25.9414H5.41992ZM25.4199 10.9414L16.0762 16.7852C15.972 16.8477 15.8628 16.8947 15.7487 16.9264C15.6345 16.9581 15.5249 16.9735 15.4199 16.9727C15.3149 16.9718 15.2058 16.9564 15.0924 16.9264C14.9791 16.8964 14.8695 16.8493 14.7637 16.7852L5.41992 10.9414V23.4414H25.4199V10.9414ZM15.4199 14.6914L25.4199 8.44141H5.41992L15.4199 14.6914ZM5.41992 11.2539V9.41016V9.44141V9.42641V11.2539Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="join__bottom">
+                  <div class="join__menu">
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-goto-top="120"
+                      class="join__menu-item"
+                      >About</a
+                    >
+                    <a
+                      href="#"
+                      data-goto=".how"
+                      data-goto-top="140"
+                      class="join__menu-item"
+                      >How to buy</a
+                    >
+                    <a
+                      href="#"
+                      data-goto=".tokenomics"
+                      data-goto-top="60"
+                      class="join__menu-item"
+                      >laikanomics</a
+                    >
+                    <a href="#" class="join__menu-item">White Paper</a>
+                  </div>
+                  <div class="join__bootom-social">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="49"
+                        height="49"
+                        viewBox="0 0 49 49"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_2009_1614)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M40.4732 9.38532C40.9675 9.1773 41.5084 9.10556 42.0398 9.17756C42.5712 9.24955 43.0735 9.46266 43.4946 9.79469C43.9157 10.1267 44.2401 10.5655 44.434 11.0655C44.6279 11.5654 44.6843 12.1082 44.5972 12.6373L40.0612 40.1513C39.6212 42.8053 36.7092 44.3273 34.2752 43.0053C32.2392 41.8993 29.2152 40.1953 26.4952 38.4173C25.1352 37.5273 20.9692 34.6773 21.4812 32.6493C21.9212 30.9153 28.9212 24.3993 32.9212 20.5253C34.4912 19.0033 33.7752 18.1253 31.9212 19.5253C27.3172 23.0013 19.9252 28.2873 17.4812 29.7753C15.3252 31.0873 14.2012 31.3113 12.8572 31.0873C10.4052 30.6793 8.13123 30.0473 6.27523 29.2773C3.76723 28.2373 3.88923 24.7893 6.27323 23.7853L40.4732 9.38532Z"
+                            fill="#ECE6DE"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2009_1614">
+                            <rect
+                              width="48"
+                              height="48"
+                              fill="white"
+                              transform="translate(0.919922 0.525391)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="49"
+                        height="49"
+                        viewBox="0 0 49 49"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_2009_1618)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M44.0899 43.2754L29.095 21.4197L29.1206 21.4402L42.6407 5.77539H38.1226L27.1088 18.5254L18.3625 5.77539L6.5133 5.77539L20.5124 26.1805L20.5107 26.1788L5.74609 43.2754H10.2641L22.5089 29.0902L32.2406 43.2754H44.0899ZM16.5723 9.18447L37.6111 39.8663H34.0308L12.975 9.18447H16.5723Z"
+                            fill="#ECE6DE"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2009_1618">
+                            <rect
+                              width="48"
+                              height="48"
+                              fill="white"
+                              transform="translate(0.919922 0.525391)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="49"
+                        height="49"
+                        viewBox="0 0 49 49"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.5199 4.52539H33.3199C39.7199 4.52539 44.9199 9.72539 44.9199 16.1254V32.9254C44.9199 36.0019 43.6978 38.9524 41.5224 41.1278C39.3469 43.3033 36.3964 44.5254 33.3199 44.5254H16.5199C10.1199 44.5254 4.91992 39.3254 4.91992 32.9254V16.1254C4.91992 13.0489 6.14206 10.0984 8.31748 7.92295C10.4929 5.74753 13.4434 4.52539 16.5199 4.52539ZM16.1199 8.52539C14.2104 8.52539 12.379 9.28396 11.0288 10.6342C9.67849 11.9845 8.91992 13.8158 8.91992 15.7254V33.3254C8.91992 37.3054 12.1399 40.5254 16.1199 40.5254H33.7199C35.6295 40.5254 37.4608 39.7668 38.8111 38.4166C40.1614 37.0663 40.9199 35.2349 40.9199 33.3254V15.7254C40.9199 11.7454 37.6999 8.52539 33.7199 8.52539H16.1199ZM35.4199 11.5254C36.083 11.5254 36.7188 11.7888 37.1877 12.2576C37.6565 12.7265 37.9199 13.3623 37.9199 14.0254C37.9199 14.6884 37.6565 15.3243 37.1877 15.7932C36.7188 16.262 36.083 16.5254 35.4199 16.5254C34.7569 16.5254 34.121 16.262 33.6522 15.7932C33.1833 15.3243 32.9199 14.6884 32.9199 14.0254C32.9199 13.3623 33.1833 12.7265 33.6522 12.2576C34.121 11.7888 34.7569 11.5254 35.4199 11.5254ZM24.9199 14.5254C27.5721 14.5254 30.1156 15.579 31.991 17.4543C33.8664 19.3297 34.9199 21.8732 34.9199 24.5254C34.9199 27.1776 33.8664 29.7211 31.991 31.5965C30.1156 33.4718 27.5721 34.5254 24.9199 34.5254C22.2678 34.5254 19.7242 33.4718 17.8489 31.5965C15.9735 29.7211 14.9199 27.1776 14.9199 24.5254C14.9199 21.8732 15.9735 19.3297 17.8489 17.4543C19.7242 15.579 22.2678 14.5254 24.9199 14.5254ZM24.9199 18.5254C23.3286 18.5254 21.8025 19.1575 20.6773 20.2827C19.5521 21.408 18.9199 22.9341 18.9199 24.5254C18.9199 26.1167 19.5521 27.6428 20.6773 28.768C21.8025 29.8933 23.3286 30.5254 24.9199 30.5254C26.5112 30.5254 28.0373 29.8933 29.1626 28.768C30.2878 27.6428 30.9199 26.1167 30.9199 24.5254C30.9199 22.9341 30.2878 21.408 29.1626 20.2827C28.0373 19.1575 26.5112 18.5254 24.9199 18.5254Z"
+                          fill="#ECE6DE"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="49"
+                        height="49"
+                        viewBox="0 0 49 49"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M29.4692 18.9369C30.6689 18.3414 32.1952 17.4644 33.7235 16.2629C34.0457 16.9293 34.0813 17.5107 33.9149 17.9801C33.7972 18.3109 33.5754 18.5988 33.2842 18.8277C32.9686 19.075 32.5742 19.2555 32.1385 19.3528C31.3117 19.5382 30.3461 19.4302 29.4692 18.9369ZM29.6772 25.04L31.2652 25.9534C28.0228 27.7632 27.1412 31.1236 26.0939 34.3964C25.047 31.1236 24.1653 27.7629 20.923 25.9534L22.511 25.04C22.8261 24.9213 23.0288 24.6144 23.0128 24.2792C22.8671 21.2139 23.6984 19.8582 24.8197 19.0074C25.2216 18.7026 25.6607 18.5496 26.0939 18.5496C26.5271 18.5496 26.9662 18.7026 27.3681 19.0074C28.4891 19.8586 29.3203 21.2139 29.175 24.2792C29.159 24.6144 29.3624 24.9213 29.6772 25.04ZM26.0943 5.02539C27.9299 5.07457 29.7702 5.4293 31.3673 6.1196C32.4733 6.59836 33.5049 7.23043 34.4396 7.98653C34.8616 8.32789 35.2091 8.65767 35.5919 9.03735C36.6242 9.07278 38.133 7.93085 38.8334 6.86233C37.6278 10.7976 32.1272 15.4446 28.3191 17.2229C28.3177 17.2222 28.3166 17.2214 28.3155 17.2208C27.6321 16.7011 26.8634 16.4411 26.0946 16.4411C25.3259 16.4411 24.5572 16.7011 23.8738 17.2208C23.8727 17.2214 23.8716 17.2225 23.8702 17.2229C20.0613 15.4446 14.5611 10.7973 13.3555 6.86233C14.0559 7.93085 15.5644 9.07315 16.5967 9.03735C16.9795 8.65803 17.327 8.32789 17.7489 7.98653C18.6833 7.23043 19.7153 6.59836 20.8213 6.1196C22.4187 5.4293 24.2587 5.07457 26.0943 5.02539ZM22.7194 18.9369C21.52 18.3414 19.9934 17.4644 18.465 16.2629C18.1429 16.9293 18.1073 17.5107 18.2733 17.9801C18.3909 18.3109 18.6128 18.5988 18.904 18.8277C19.2199 19.075 19.6143 19.2555 20.0501 19.3528C20.8769 19.5382 21.8428 19.4302 22.7194 18.9369Z"
+                          fill="#ECE6DE"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M35.3976 14.7894C36.239 13.944 36.9805 13.0081 37.5764 12.1729L37.8793 12.7402C38.8539 14.682 39.3605 16.6162 39.3605 18.7927L39.3583 22.2467L39.3764 24.037C39.4469 28.4326 40.4023 32.8795 42.5658 36.9494L38.0391 33.3146L34.8363 38.4901L31.4716 35.3359L26.0944 44.0252L20.7172 35.3363L17.3525 38.4905L14.1498 33.315L9.62305 36.9498C11.7865 32.8799 12.7416 28.4326 12.8124 24.0374L12.8305 22.247L12.8284 18.7931C12.8284 16.6162 13.3346 14.6824 14.3095 12.7406L14.612 12.1732C15.2083 13.0081 15.9494 13.944 16.7908 14.7898L16.5279 15.3333C16.0173 16.3887 15.8485 17.569 16.2461 18.6918C16.5025 19.4147 16.9702 20.0348 17.5733 20.5082C18.159 20.9677 18.8522 21.2776 19.5778 21.4403C20.0506 21.5463 20.5321 21.59 21.0107 21.5752C20.8992 22.2055 20.8501 22.8588 20.8473 23.525L16.5773 25.9809L19.8723 27.82C20.1355 27.9672 20.3865 28.1353 20.6218 28.3238C23.3383 30.7526 24.9717 37.938 26.094 41.4477C27.2165 37.938 28.8498 30.7526 31.5664 28.3238C31.8016 28.1357 32.0526 27.9672 32.3159 27.82L35.6109 25.9809L31.3408 23.525C31.3376 22.8588 31.2889 22.2055 31.1774 21.5752C31.6561 21.59 32.1375 21.5463 32.6103 21.4403C33.3358 21.2776 34.0291 20.9677 34.6148 20.5082C35.2179 20.0348 35.6857 19.4147 35.942 18.6918C36.3396 17.5694 36.1707 16.3891 35.6602 15.3333L35.3976 14.7894Z"
+                          fill="#ECE6DE"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="49"
+                        viewBox="0 0 50 49"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M20.5853 6.01063C18.116 7.30582 16.0958 8.40193 16.0963 8.44656C16.0975 8.56155 22.0225 11.5833 22.2328 11.5759C22.3284 11.5728 23.0224 11.251 23.775 10.8613L25.1433 10.1526L26.6376 10.9261L28.132 11.6998L30.5793 10.5925C34.2667 8.92392 34.6497 8.74106 34.5897 8.67973C34.5101 8.59816 33.1876 7.88279 29.5991 5.98038C27.865 5.06094 26.1817 4.15954 25.8586 3.97703C25.5352 3.79434 25.2269 3.64759 25.1729 3.65043C25.119 3.65327 23.0545 4.71546 20.5853 6.01063ZM9.75508 11.6578L7.18466 12.9949V18.8628C7.18466 22.0902 7.21836 24.7306 7.25986 24.7306C7.30136 24.7306 8.56581 24.1786 10.0701 23.5038L12.8053 22.277V16.092L14.142 16.8252C15.1719 17.3898 16.2026 17.953 17.2337 18.5154L18.9888 19.4722L19.7698 19.1165C20.2596 18.8931 20.7485 18.6676 21.2363 18.4398C21.6132 18.2629 22.5385 17.8433 23.2927 17.5069C24.0467 17.1705 24.7447 16.832 24.8436 16.755C24.9751 16.6525 23.372 15.7605 18.9141 13.4553C15.554 11.7177 12.697 10.3015 12.5652 10.3084C12.4334 10.3152 11.1689 10.9224 9.75508 11.6578ZM35.0527 12.0333C33.302 12.829 31.8684 13.512 31.8668 13.5509C31.8653 13.5898 32.8193 14.1611 33.9872 14.8203C35.1549 15.4797 36.1104 16.0543 36.1104 16.0976C36.1104 16.1409 35.0771 16.645 33.8143 17.2183C32.5511 17.7915 29.3588 19.2433 26.7199 20.4445L17.8774 24.4692C15.6532 25.4818 13.6482 26.3944 13.422 26.4976C8.87869 28.5685 7.63 29.1432 7.45854 29.2418C7.28608 29.3411 7.24708 29.9181 7.21637 32.8139L7.17969 36.268L9.47838 37.4473L11.7769 38.6266L14.9642 37.1782C16.7174 36.3816 18.1517 35.6882 18.1517 35.637C18.1517 35.5858 17.8277 35.3736 17.432 35.1645C17.0361 34.9554 16.2186 34.4928 15.6154 34.1359C15.0122 33.7791 14.4109 33.4518 14.2788 33.4083C14.1468 33.365 14.0408 33.2893 14.0429 33.2399C14.045 33.1905 15.4486 32.5194 17.1617 31.7479C20.489 30.2499 23.0353 29.0953 28.502 26.606C30.9464 25.493 33.3913 24.3812 35.8362 23.2693C37.9851 22.2925 40.4836 21.152 41.3884 20.7345L43.0334 19.9755L43.0699 16.4823L43.1067 12.9891L40.7752 11.7842C39.4929 11.1215 38.3969 10.581 38.3394 10.583C38.282 10.5848 36.8031 11.2374 35.0527 12.0333ZM42.409 24.6356C42.0654 24.8045 41.3869 25.121 40.9011 25.3386C40.4152 25.5562 39.4934 25.9751 38.8523 26.2696L37.6871 26.8048L37.6605 29.8714C37.6459 31.5581 37.5842 32.9306 37.5234 32.9218C37.3856 32.9011 35.2016 31.7732 33.0063 30.5886C31.4218 29.7337 31.3222 29.6998 30.9499 29.8855C30.7346 29.993 29.448 30.5739 28.0909 31.1768C26.7336 31.7797 25.579 32.3124 25.5246 32.3605C25.4705 32.4087 28.2019 33.8994 31.5947 35.6736L37.7633 38.8993L40.3984 37.5265C41.8477 36.7718 43.0799 36.0832 43.1367 35.9966C43.2644 35.8018 43.2535 24.3015 43.1255 24.317C43.0749 24.3232 42.7525 24.4666 42.409 24.6356ZM27.8167 38.1341C27.3595 38.332 26.9026 38.5302 26.4457 38.7286C25.0663 39.3296 25.3365 39.3496 23.6952 38.5269C22.6021 37.979 22.1309 37.8098 21.9264 37.8919C21.773 37.9534 20.4526 38.5516 18.9922 39.2212C17.5317 39.8908 16.2861 40.4385 16.2242 40.4385C15.6114 40.4385 16.6303 41.0514 20.561 43.0481L25.171 45.3895L27.1108 44.4254C28.1775 43.895 30.3293 42.8328 31.8925 42.0653C33.4555 41.2974 34.7152 40.6492 34.6916 40.6249C34.6679 40.6005 33.3582 39.9232 31.7809 39.1199L28.9133 37.6594L27.8167 38.1341Z"
+                          fill="#ECE6DE"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__bootom-social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="45"
+                        height="44"
+                        viewBox="0 0 45 44"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.29557 35.859C7.28724 35.859 6.42435 35.5085 5.70691 34.8073C4.98946 34.1062 4.63013 33.2623 4.62891 32.2757V10.7757C4.62891 9.7903 4.98824 8.94702 5.70691 8.24588C6.42557 7.54474 7.28846 7.19358 8.29557 7.19238H37.6289C38.6372 7.19238 39.5007 7.54355 40.2194 8.24588C40.9381 8.94822 41.2968 9.79149 41.2956 10.7757V32.2757C41.2956 33.2611 40.9368 34.105 40.2194 34.8073C39.502 35.5097 38.6385 35.8602 37.6289 35.859H8.29557ZM37.6289 14.359L23.9247 22.7351C23.772 22.8247 23.6118 22.8922 23.4444 22.9375C23.277 22.9829 23.1162 23.005 22.9622 23.0038C22.8082 23.0026 22.6481 22.9805 22.4819 22.9375C22.3157 22.8945 22.155 22.8271 21.9997 22.7351L8.29557 14.359V32.2757H37.6289V14.359ZM22.9622 19.734L37.6289 10.7757H8.29557L22.9622 19.734ZM8.29557 14.807V12.1643V12.209V12.1875V14.807Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <span>2025 © ALL RIGHTS RESERVED</span>
+          <a href="https://t.me/osnovoco" target="_blank">
+            <span>Designed by</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="35"
+              viewBox="0 0 38 35"
+              fill="none"
+            >
+              <path
+                d="M13.0211 11.0596L22.0515 26.1734H3.99075L13.0211 11.0596Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M28.0175 18.79L20.6106 6.57597L35.4245 6.57597L28.0175 18.79Z"
+                fill="#E23D1E"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="90"
+              height="16"
+              viewBox="0 0 90 16"
+              fill="none"
+            >
+              <path
+                d="M75.2715 7.27841C75.2715 5.8806 75.5865 4.65013 76.2165 3.58701C76.8662 2.52388 77.7423 1.69701 78.8448 1.10639C79.9473 0.496074 81.1974 0.190918 82.5952 0.190918C83.993 0.190918 85.2334 0.496074 86.3162 1.10639C87.4187 1.69701 88.2948 2.52388 88.9444 3.58701C89.5941 4.65013 89.919 5.8806 89.919 7.27841C89.919 8.65654 89.5941 9.887 88.9444 10.9698C88.2948 12.0329 87.4187 12.8697 86.3162 13.48C85.2334 14.0706 83.993 14.3659 82.5952 14.3659C81.1974 14.3659 79.9473 14.0706 78.8448 13.48C77.7423 12.8697 76.8662 12.0329 76.2165 10.9698C75.5865 9.887 75.2715 8.65654 75.2715 7.27841ZM78.5494 7.27841C78.5494 8.12498 78.7266 8.8731 79.081 9.52279C79.4354 10.1528 79.9177 10.6548 80.528 11.0289C81.1384 11.3833 81.8274 11.5604 82.5952 11.5604C83.3434 11.5604 84.0226 11.3833 84.6329 11.0289C85.2629 10.6548 85.7551 10.1528 86.1094 9.52279C86.4638 8.8731 86.641 8.12498 86.641 7.27841C86.641 6.43185 86.4638 5.68373 86.1094 5.03404C85.7551 4.38435 85.2629 3.88232 84.6329 3.52795C84.0226 3.17357 83.3434 2.99638 82.5952 2.99638C81.8274 2.99638 81.1384 3.17357 80.528 3.52795C79.9177 3.88232 79.4354 4.38435 79.081 5.03404C78.7266 5.68373 78.5494 6.43185 78.5494 7.27841Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M60.6523 0.487305H64.137L67.6808 9.25808L71.2245 0.487305H74.7387L67.6808 15.312L60.6523 0.487305Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M45.4805 7.27841C45.4805 5.8806 45.7955 4.65013 46.4255 3.58701C47.0752 2.52388 47.9512 1.69701 49.0537 1.10639C50.1562 0.496074 51.4064 0.190918 52.8042 0.190918C54.202 0.190918 55.4423 0.496074 56.5251 1.10639C57.6276 1.69701 58.5037 2.52388 59.1534 3.58701C59.8031 4.65013 60.128 5.8806 60.128 7.27841C60.128 8.65654 59.8031 9.887 59.1534 10.9698C58.5037 12.0329 57.6276 12.8697 56.5251 13.48C55.4423 14.0706 54.202 14.3659 52.8042 14.3659C51.4064 14.3659 50.1562 14.0706 49.0537 13.48C47.9512 12.8697 47.0752 12.0329 46.4255 10.9698C45.7955 9.887 45.4805 8.65654 45.4805 7.27841ZM48.7584 7.27841C48.7584 8.12498 48.9356 8.8731 49.29 9.52279C49.6444 10.1528 50.1267 10.6548 50.737 11.0289C51.3473 11.3833 52.0364 11.5604 52.8042 11.5604C53.5523 11.5604 54.2316 11.3833 54.8419 11.0289C55.4719 10.6548 55.9641 10.1528 56.3184 9.52279C56.6728 8.8731 56.85 8.12498 56.85 7.27841C56.85 6.43185 56.6728 5.68373 56.3184 5.03404C55.9641 4.38435 55.4719 3.88232 54.8419 3.52795C54.2316 3.17357 53.5523 2.99638 52.8042 2.99638C52.0364 2.99638 51.3473 3.17357 50.737 3.52795C50.1267 3.88232 49.6444 4.38435 49.29 5.03404C48.9356 5.68373 48.7584 6.43185 48.7584 7.27841Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M39.1631 5.80185C39.1631 4.79779 38.9564 4.03982 38.543 3.52795C38.1295 3.01607 37.4897 2.76014 36.6234 2.76014C36.0328 2.76014 35.5111 2.8881 35.0583 3.14404C34.6055 3.38029 34.2511 3.73467 33.9952 4.20716C33.7392 4.65998 33.6112 5.19154 33.6112 5.80185V14.0706H30.4219V0.486231H33.6112V2.58295C34.0444 1.77576 34.5956 1.17529 35.265 0.781543C35.9541 0.387793 36.7711 0.190918 37.7161 0.190918C39.2517 0.190918 40.4231 0.663418 41.2303 1.60842C42.0375 2.53373 42.4411 3.81341 42.4411 5.44748V14.0706H39.1631V5.80185Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M18.5148 9.61138C18.9479 10.0839 19.381 10.4973 19.8141 10.8517C20.267 11.1864 20.7198 11.4423 21.1726 11.6195C21.6254 11.777 22.0782 11.8558 22.531 11.8558C23.1019 11.8558 23.5449 11.7278 23.8599 11.4718C24.1946 11.2159 24.3619 10.8615 24.3619 10.4087C24.3619 10.015 24.234 9.68029 23.978 9.40466C23.7221 9.10935 23.3677 8.86326 22.9149 8.66638C22.4621 8.44982 21.9305 8.23326 21.3202 8.01669C20.7099 7.78044 20.0996 7.50482 19.4893 7.18982C18.8987 6.85513 18.4065 6.42201 18.0127 5.89045C17.6387 5.35888 17.4516 4.68951 17.4516 3.88232C17.4516 3.05545 17.6584 2.36639 18.0718 1.81514C18.5049 1.26389 19.0759 0.860292 19.7846 0.604355C20.513 0.32873 21.2907 0.190918 22.1176 0.190918C22.8657 0.190918 23.5646 0.299199 24.2143 0.515762C24.8837 0.732324 25.4841 1.01779 26.0157 1.37217C26.5473 1.72654 27.0001 2.13014 27.3741 2.58295L25.6023 4.47295C25.1494 3.94138 24.608 3.50826 23.978 3.17357C23.348 2.83888 22.6984 2.67154 22.029 2.67154C21.5762 2.67154 21.2021 2.76998 20.9068 2.96685C20.6115 3.16373 20.4638 3.4492 20.4638 3.82326C20.4638 4.13826 20.5918 4.42373 20.8477 4.67967C21.1234 4.91591 21.4777 5.13248 21.9109 5.32935C22.3637 5.52623 22.8657 5.73295 23.4169 5.94951C24.1651 6.24482 24.8541 6.56966 25.4841 6.92404C26.1141 7.27841 26.6162 7.71154 26.9902 8.22341C27.384 8.73529 27.5809 9.40466 27.5809 10.2315C27.5809 11.5112 27.1379 12.5448 26.2519 13.3323C25.3857 14.1001 24.2044 14.484 22.7082 14.484C21.7829 14.484 20.9265 14.3462 20.139 14.0706C19.3712 13.7753 18.692 13.4012 18.1013 12.9484C17.5304 12.4759 17.048 11.9837 16.6543 11.4718L18.5148 9.61138Z"
+                fill="#E23D1E"
+              />
+              <path
+                d="M0.226562 7.27841C0.226562 5.8806 0.541562 4.65013 1.17156 3.58701C1.82125 2.52388 2.69734 1.69701 3.79984 1.10639C4.90234 0.496074 6.1525 0.190918 7.55031 0.190918C8.94812 0.190918 10.1884 0.496074 11.2712 1.10639C12.3737 1.69701 13.2498 2.52388 13.8995 3.58701C14.5492 4.65013 14.8741 5.8806 14.8741 7.27841C14.8741 8.65654 14.5492 9.887 13.8995 10.9698C13.2498 12.0329 12.3737 12.8697 11.2712 13.48C10.1884 14.0706 8.94812 14.3659 7.55031 14.3659C6.1525 14.3659 4.90234 14.0706 3.79984 13.48C2.69734 12.8697 1.82125 12.0329 1.17156 10.9698C0.541562 9.887 0.226562 8.65654 0.226562 7.27841ZM3.50453 7.27841C3.50453 8.12498 3.68172 8.8731 4.03609 9.52279C4.39047 10.1528 4.87281 10.6548 5.48312 11.0289C6.09343 11.3833 6.7825 11.5604 7.55031 11.5604C8.29843 11.5604 8.97765 11.3833 9.58796 11.0289C10.218 10.6548 10.7101 10.1528 11.0645 9.52279C11.4189 8.8731 11.5961 8.12498 11.5961 7.27841C11.5961 6.43185 11.4189 5.68373 11.0645 5.03404C10.7101 4.38435 10.218 3.88232 9.58796 3.52795C8.97765 3.17357 8.29843 2.99638 7.55031 2.99638C6.7825 2.99638 6.09343 3.17357 5.48312 3.52795C4.87281 3.88232 4.39047 4.38435 4.03609 5.03404C3.68172 5.68373 3.50453 6.43185 3.50453 7.27841Z"
+                fill="#E23D1E"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20250130173418"></script>
+    <script src="js/demo.js"></script>
+  </body>
+</html>
